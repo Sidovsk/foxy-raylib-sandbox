@@ -1,0 +1,30 @@
+{
+  "files.associations": {
+    "cstdlib": "cpp",
+    "cstddef": "cpp",
+    "bit": "cpp",
+    "cctype": "cpp",
+    "cmath": "cpp",
+    "compare": "cpp",
+    "concepts": "cpp",
+    "cstdarg": "cpp",
+    "cstdio": "cpp",
+    "cwchar": "cpp",
+    "type_traits": "cpp",
+    "limits": "cpp",
+    "new": "cpp",
+    "cinttypes": "cpp",
+    "cstdint": "cpp",
+    "typeinfo": "cpp",
+    "string": "cpp",
+    "algorithm": "cpp",
+    "array": "cpp",
+    "functional": "cpp",
+    "deque": "cpp",
+    "unordered_map": "cpp",
+    "vector": "cpp",
+    "string_view": "cpp",
+    "initializer_list": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}
