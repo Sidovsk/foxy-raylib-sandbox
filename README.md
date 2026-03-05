@@ -24,7 +24,11 @@ sudo apt install build-essential cmake ninja-build git
 
 ```bash
 git clone https://github.com/microsoft/vcpkg.git
+```
+```bash
 cd vcpkg
+```
+```bash
 ./bootstrap-vcpkg.sh
 ```
 ## 3. Configure the project and install dependencies
