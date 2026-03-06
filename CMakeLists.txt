@@ -14,9 +14,18 @@ set(BUILD_SHARED_LIBS OFF)
 
 file(GLOB SOURCES "src/*.cpp")
 
-add_executable(FoxyRaylibSandbox ${SOURCES})
+add_executable(FoxyRaylibSandbox WIN32 ${SOURCES})
 
 find_package(raylib CONFIG REQUIRED)
 target_link_libraries(FoxyRaylibSandbox PRIVATE raylib)
 find_package(glfw3 CONFIG REQUIRED)
 target_link_libraries(FoxyRaylibSandbox PRIVATE glfw)
+if(WIN32) 
+  target_link_libraries(FoxyRaylibSandbox PRIVATE winmm)
+
+  target_link_options(FoxyRaylibSandbox PRIVATE
+    -static
+    -static-libgcc
+    -static-libstdc++
+  ) 
+endif()
