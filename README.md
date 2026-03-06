@@ -46,3 +46,18 @@ cmake --build .
 ```bash
 ./build/foxy-raylib-sandbox
 ```
+
+### Extra
+Cross compiling with x86_64-w64-mingw32-g++ 
+```bash
+cmake -B build-windows \ 
+-G Ninja \
+-DCMAKE_SYSTEM_NAME=Windows \
+-DCMAKE_C_COMPILER=x86_64-w64-mingw32-gcc \
+-DCMAKE_CXX_COMPILER=x86_64-w64-mingw32-g++ \
+-DCMAKE_TOOLCHAIN_FILE=~/vcpkg/scripts/buildsystems/vcpkg.cmake \
+-DVCPKG_TARGET_TRIPLET=x64-mingw-static -DVCPKG_APPLOCAL_DEPS=OFF
+```
+```bash
+cmake --build build-windows
+```
