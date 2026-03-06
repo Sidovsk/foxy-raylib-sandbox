@@ -31,18 +31,18 @@ cd vcpkg
 ```bash
 ./bootstrap-vcpkg.sh
 ```
-## 3. Configure the project and install dependencies
+### 3. Configure the project and install dependencies
 ```bash
 cmake -B build -G Ninja \
 -DCMAKE_TOOLCHAIN_FILE=$VCPKG_ROOT/scripts/buildsystems/vcpkg.cmake
 ```
 
-## 4. Build
+### 4. Build
 ```bash
 cmake --build .
 ```
 
-## 5. Run
+### 5. Run
 ```bash
 ./build/foxy-raylib-sandbox
 ```
